@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+}
+#page1{
+    background-image: url("../img/halloween1.jpg");
+}
+#page2{
+    background-image: url("../img/halloween2.jpg");
+}
+#page3{
+    background-image: url("../img/halloweenMain.jpg");
+}
+#page4{
+    background-image: url("../img/charm1.jpg");
+}
+#page2,#page3,#page4{
+    display: none;
+}
+div{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+
+#title{
+    position: absolute;
+    left: 50%;
+    margin-left: -168px;
+    top: 50px;
+    animation: showByStep 4s;
+}
+@keyframes showByStep {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#pumpkin{
+    position: absolute;
+    left: 50%;
+    margin-left: -205px;
+    top: 50px;
+}
+#box{
+    position: absolute;
+    left: 50%;
+    margin-left: -184px;
+    bottom: 240px;
+    animation: moveBox .5s infinite;
+}
+@keyframes moveBox {
+    from{
+        left: 50%;
+        margin-left: -184px;
+        bottom: 240px;
+    }
+    to{
+        left: 48%;
+        margin-left: -184px;
+        bottom: 240px;
+    }
+}
+
+#start{
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    bottom: 300px;
+}
+
+#yao1{
+    position: absolute;
+    animation: y1 6s infinite;/*样式名称    动画完成一次的时间    循环播放*/
+}
+@keyframes y1{
+    0%{
+        left: 50px;
+        top: 90px;
+    }
+    30%{
+        left: 50px;
+        top: 210px;
+    }
+    70%{
+        left: 120px;
+        top: 150px;
+    }
+    100%{
+        left: 50px;
+        top: 90px;
+    }
+}
+
+#yao2{
+    position: absolute;
+    animation: y2 6s infinite;/*样式名称    动画完成一次的时间    循环播放*/
+}
+@keyframes y2{
+    0%{
+        left: 134px;
+        top: 50px;
+    }
+    30%{
+        left: 250px;
+        top: 120px;
+    }
+    70%{
+        left: 350px;
+        top: 180px;
+    }
+    100%{
+        left: 134px;
+        top: 50px;
+    }
+}
+
+#yao3{
+    position: absolute;
+    animation: y3 6s infinite;/*样式名称    动画完成一次的时间    循环播放*/
+}
+@keyframes y3{
+    0%{
+        left: 54px;
+        top: 200px;
+    }
+    30%{
+        left: 250px;
+        top: 250px;
+    }
+    70%{
+        left: 450px;
+        top: 420px;
+    }
+    100%{
+        left: 54px;
+        top: 200px;
+    }
+}
+
+#yao4{
+    position: absolute;
+    animation: y4 8s infinite;
+}
+@keyframes y4{
+    0%{
+        left: 460px;
+        top: 60px;
+    }
+    20%{
+        left: 610px;
+        top: 120px;
+    }
+    50%{
+        left: 610px;
+        top: 630px;
+    }
+    80%{
+        left: 610px;
+        top: 120px;
+    }
+    100%{
+        left: 460px;
+        top: 60px;
+    }
+}
+
+#yao5{
+    position: absolute;
+    animation: y5 6s infinite;
+}
+@keyframes y5{
+    0%{
+        left: 320px;
+        top: 435px;
+    }
+    50%{
+        left: 320px;
+        top: 567px;
+    }
+    100%{
+        left: 320px;
+        top: 435px;
+    }
+}
+
+#yao6{
+    position: absolute;
+    animation: y6 4s infinite;
+}
+@keyframes y6{
+    0%{
+        left: 150px;
+        top: 363px;
+    }
+    50%{
+        left: 150px;
+        top: 593px;
+    }
+    100%{
+        left: 150px;
+        top: 363px;
+    }
+}
+#yao7{
+    position: absolute;
+    right: 50px;
+    bottom: 350px;
+    animation: y7 5s infinite;
+}
+@keyframes y7{
+    0%{
+        width: 145px;
+        height: 167px;
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        width: 145px;
+        height: 167px;
+    }
+}

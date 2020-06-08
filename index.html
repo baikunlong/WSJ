@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>万圣节抽灵符</title>
+    <link rel="stylesheet" href="css/wsj.css">
+</head>
+<body>
+<div id="page1">
+    <img src="img/title.png" alt="" id="title">
+    <img src="img/box.png" alt="" id="box" onclick="next(this)">
+</div>
+<div id="page2">
+    <img src="img/pumpkin.png" alt="" id="pumpkin">
+    <img src="img/startGame.jpg" alt="" id="start" onclick="next(this)">
+</div>
+<div id="page3">
+    <img src="img/1.png" alt="" id="yao1" onclick="next(this)">
+    <img src="img/2.png" alt="" id="yao2" onclick="next(this)">
+    <img src="img/3.png" alt="" id="yao3" onclick="next(this)">
+    <img src="img/4.png" alt="" id="yao4" onclick="next(this)">
+    <img src="img/5.png" alt="" id="yao5" onclick="next(this)">
+    <img src="img/6.png" alt="" id="yao6" onclick="next(this)">
+    <img src="img/7.png" alt="" id="yao7" onclick="next(this)">
+</div>
+<div id="page4">
+    <img src="img/back.png" alt="" onclick="back(this)">
+</div>
+</body>
+</html>
+<script>
+    function next(obj) {
+        let parentNode = obj.parentNode;
+        parentNode.style.display = "none";
+        let node = parentNode.nextElementSibling;
+        node.style.display = "block";
+        let number = Math.floor(Math.random() * 7) + 1;
+        console.log(number);
+        document.getElementById("page4").style.backgroundImage = "url(img/charm" + (number) + ".jpg)";
+    }
+
+    function back(obj) {
+        let parentNode = obj.parentNode;
+        parentNode.style.display = "none";
+        parentNode.previousElementSibling.style.display = "block";
+    }
+</script>

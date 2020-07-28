@@ -2,3 +2,5 @@
 /workspace.xml
 
 ../test
+../test/
+../test/*
